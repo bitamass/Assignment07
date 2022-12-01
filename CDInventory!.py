@@ -96,11 +96,11 @@ class FileProcessor:
             none
         """
          #TODone modify existing code to work with binary instead of text
-        #table.clear()  
+        table.clear()  
         #load binary data from .dat file
-        #with open(file_name,'rb') as file:
-           #table = pickle.load(file)
-        #return table
+        with open(file_name,'rb') as file:
+           table = pickle.load(file)
+        return table
     
     @staticmethod
     def write_file(file_name, table):
